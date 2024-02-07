@@ -188,8 +188,16 @@ syn keyword hlaConditional  valres var verr verw vmt wait wbinvd wchar welse
 syn keyword hlaConditional  while wrmsr wstring xadd xchg xlat xmm0 xmm1 xmm2
 " }}}
 
+syn match hlaStatement "stdout\."
 syn match hlaStatement "stdout\.put"
+syn match hlaStatement "stdout\.newln"
+syn match hlaStatement "stdin\."
 syn match hlaStatement "stdin\.get"
+syn match hlaStatement "stdin\.geti8"
+syn match hlaStatement "stdin\.geti16"
+syn match hlaStatement "stdin\.geti32"
+syn match hlaStatement "stdin\.getc"
+syn match hlaStatement "stdin\.readLn"
 syn match hlaStatement "stdin\.putu8size"
 syn match hlaStatement "stdin\.a_gets"
 syn match hlaStatement "stdin\.flushInput"
